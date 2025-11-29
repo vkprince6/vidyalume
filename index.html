@@ -1611,6 +1611,20 @@
         .why-grid > .why-card:last-child {
             justify-self: center;
         }
+        /* Center the last card in Programs & Why grids on wide screens */
+        @media (min-width: 1025px) {
+          .programs-grid > .program-card:last-child {
+            max-width: 350px;      /* match the min card width used in grid */
+            justify-self: center;
+            width: 100%;
+          }
+
+          .why-grid > .why-card:last-child {
+            max-width: 280px;      /* match the min card width used in why-grid */
+            justify-self: center;
+            width: 100%;
+          }
+        }
 
     </style>
 </head>
